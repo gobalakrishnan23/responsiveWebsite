@@ -1,0 +1,356 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container-1{
+  background-image: url("Shape.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (max-width: 10000px) {
+   .icon{
+     display: none;
+   }
+   .container{
+    padding: 30px 70px;
+   }
+   .button-2{
+    background-color: #cccccc67;
+    border: none;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 30px;
+   }
+   .text{
+    color: #0BA13D;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+   }
+   .text-1{
+    font-size: 35px;
+    color: #FFFFFF;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+   }
+   .container-2{
+    background-image: url("Shape (1).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    text-align: center;
+    display: none;
+    margin-top: 30px;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .box-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .container-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+  }
+  .container-4{
+    display: flex;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+    padding: 50px;
+  }
+  .box-2{
+    display: flex;
+    gap: 10px;
+  }
+  .container-5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    overflow: hidden;
+  }
+  .box-3{
+    width: 300px;
+  }
+  .box-4{
+    width: 330px;
+    height: 530px;
+  }
+  .box-5{
+    width: 370px;
+    height: 570px;
+  }
+  .container-6{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 30px;
+    background-color: #0158AA;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  .container-7{
+    text-align: center;
+    font-size: 40px;
+  }
+  .container-8{
+    display: flex;
+    font-size: 30px;
+    gap: 10px;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+  .container-9{
+    display: flex;
+    gap: 10px;
+  }
+  .container-11{
+    width: 300px;
+    border: 1px solid #181D2A;
+    background-color: #181D2A;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .container-12{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .img-1{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .container-13{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-10{
+    position: relative;
+    left: 40px;
+    width: 600px;
+    height: 600px;
+  }
+  .box-6{
+    position: relative;
+    right: 40px;
+    z-index: 1;
+    width: 400px;
+  }
+  .box-20{
+    width: 350px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .container-1{
+    display: none;
+  }
+  .container-2{
+    display: block;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .box-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .container-4{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+    padding: 50px;
+  }
+  .container-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+  }
+  .container-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 30px;
+    background-color: #0158AA;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .container-13{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-10{
+    position: static;
+    width: 600px;
+    height: 600px;
+  }
+  .box-6{
+    position: static;
+  }
+}
+
+@media (max-width: 900px) {
+  .icon{
+    display: block;
+  }
+  .headLine{
+    display: none;
+  }
+  .button{
+    display: none;
+  }
+  .text-1{
+    flex-direction: column;
+    gap: 0px;
+  }
+  .container-8{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+  }
+  .container-12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    align-items: center;
+  }
+  .container-15{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .text{
+    font-size: 30px;
+  }
+  .text-1{
+    font-size: 15px;
+  }
+  .container-4{
+    font-size: 15px;
+  }
+  .container-8{
+    font-size: 15px;
+  }
+  .container-10{
+    font-size: 7px;
+  }
+  .img-10{
+    width: 200px;
+    height: 200px;
+  }
+  .box-6{
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container{
+    padding: 20px;
+  }
+  .button-2{
+    font-size: 10px;
+  }
+  .container-2{
+    background-image: url("Shape (1).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 280px;
+    text-align: center;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  .con-2{
+    display: flex;
+    justify-content: center;
+  }
+  .container-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .container-4{
+    font-size: 10px;
+  }
+  .box-3{
+    width: 200px;
+    height: 400px;
+    font-size: 10px;
+  }
+  .box-4{
+    width: 230px;
+    height: 430px;
+    font-size: 10px;
+  }
+  .box-5{
+    width: 270px;
+    height: 470px;
+    font-size: 10px;
+  }
+  .container-11{
+    width: 250px;
+    border: 1px solid #181D2A;
+    background-color: #181D2A;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  .img-1{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  .box-20{
+    width: 200px;
+  }
+}
