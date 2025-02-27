@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./App.css";
 
 function App() {
@@ -100,6 +100,17 @@ function App() {
   const handleTouchEnd = () => {
     setIsThreeFingerTouch(false);
   };
+
+  useEffect(()=>{
+    const timeout=setInterval(()=>{
+      setIndex((prev)=>prev===3?0:prev+1);
+    },1000);
+
+    return ()=>{
+      clearInterval(timeout)
+    }
+
+  },[])
   return (
     <>
       <div
@@ -268,7 +279,8 @@ function App() {
                   padding: "1px",
                   width: "10px",
                   border: "none",
-                  backgroundColor: "red",
+                  backgroundColor: index===0? "red":"#ccc",
+
                 }}
                 id="btn"
               ></button>
@@ -281,6 +293,7 @@ function App() {
                   width: "10px",
                   border: "none",
                   backgroundColor: "#ccc",
+                  backgroundColor: index===1? "red":"#ccc",
                 }}
                 id="btn1"
               ></button>
@@ -293,6 +306,7 @@ function App() {
                   width: "10px",
                   border: "none",
                   backgroundColor: "#ccc",
+                  backgroundColor: index===2? "red":"#ccc",
                 }}
                 id="btn2"
               ></button>
@@ -305,6 +319,7 @@ function App() {
                   width: "10px",
                   border: "none",
                   backgroundColor: "#ccc",
+                  backgroundColor: index===3? "red":"#ccc",
                 }}
                 id="btn3"
               ></button>
